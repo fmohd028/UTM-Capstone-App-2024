@@ -12,7 +12,8 @@
         android:text="The room is occupied!"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="155dp" />
+        tools:layout_editor_absoluteY="155dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/Button_Confirm"
@@ -21,5 +22,6 @@
         android:text="Return"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="230dp" />
+        tools:layout_editor_absoluteY="230dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
