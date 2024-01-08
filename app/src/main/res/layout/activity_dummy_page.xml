@@ -28,6 +28,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
+            //Button_K1 is the only functioning button
             <Button
                 android:id="@+id/Button_K1"
                 android:layout_width="wrap_content"
