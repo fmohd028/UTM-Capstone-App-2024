@@ -36,7 +36,8 @@
                 android:layout_weight="1"
                 android:text="Room K1"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp" />
+
 
             <Button
                 android:id="@+id/button2"

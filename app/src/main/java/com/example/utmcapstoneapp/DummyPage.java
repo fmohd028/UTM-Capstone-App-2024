@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -14,7 +15,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class DummyPage extends AppCompatActivity {
 //This is the code page for the room selection page
     FirebaseAuth auth;
-    Button button;
+    Button button_logout,buttonk1;
     FirebaseUser user;
 
     @Override
@@ -23,10 +24,11 @@ public class DummyPage extends AppCompatActivity {
         setContentView(R.layout.activity_dummy_page);
 
         auth = FirebaseAuth.getInstance();
-        button = findViewById(R.id.logout);
+        button_logout = findViewById(R.id.logout);
+        buttonk1 = findViewById(R.id.Button_K1);
         user = auth.getCurrentUser();
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
@@ -34,6 +36,16 @@ public class DummyPage extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+
+        });
+        buttonk1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Room Available",Toast.LENGTH_SHORT).show();
+
+
+            }
         });
     }
+
 }
